@@ -34,9 +34,9 @@ class ScreenManager {
     /// Spacing between icons in points.
     private let itemSpacing: CGFloat = 8.0
     /// Padding on the edges of the dock in points.
-    private let edgePadding: CGFloat = 12.0
+    private let edgePadding: CGFloat = 10.0
     /// Extra space for running-app indicator dots below icons.
-    private let indicatorSpace: CGFloat = 6.0
+    private let indicatorSpace: CGFloat = 8.0
 
     /// Calculate the window frame for a dock on a given screen edge.
     ///

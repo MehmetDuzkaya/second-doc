@@ -66,3 +66,4 @@ cp -R /Volumes/düz/second-doc/build/SecondDock.app /Applications/
   - İkona sağ tıklayın -> **"Dock'tan Kaldır"**.
 - **Dock Ayarları:**
   - Menü çubuğundan ilgili dock'un altındaki **"Ayarlar..."** seçeneğine tıklayarak monitörünü, kenarını, ikon boyutunu veya efektlerini dilediğiniz zaman güncelleyebilirsiniz.
+

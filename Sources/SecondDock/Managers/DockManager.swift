@@ -91,7 +91,8 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         panel.title = "Uygulama Seç"
         panel.message = "Dock'a eklemek istediğiniz uygulamayı seçin"
         panel.canChooseFiles = true
-        panel.canChooseDirectories = false
+        panel.canChooseDirectories = true
+        panel.treatsFilePackagesAsDirectories = false
         panel.allowsMultipleSelection = true
         panel.allowedContentTypes = [.application]
         panel.directoryURL = URL(fileURLWithPath: "/Applications")
@@ -104,8 +105,11 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         guard let configIndex = dockConfigs.firstIndex(where: { $0.id == dockId }) else { return }
 
         for url in panel.urls {
-            let item = DockItem(appPath: url.path)
-            dockConfigs[configIndex].items.append(item)
+            let normalizedPath = url.resolvingSymlinksInPath().path
+            let item = DockItem(appPath: normalizedPath)
+            if !dockConfigs[configIndex].items.contains(where: { $0.appPath == normalizedPath }) {
+                dockConfigs[configIndex].items.append(item)
+            }
         }
 
         if let window = dockWindows[dockId] {
@@ -113,6 +117,7 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         }
 
         saveAll()
+        NotificationCenter.default.post(name: Notification.Name("SecondDockConfigsChanged"), object: nil)
     }
 
     func removeItem(_ item: DockItem, fromDockWithId dockId: UUID) {
@@ -125,6 +130,7 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         }
 
         saveAll()
+        NotificationCenter.default.post(name: Notification.Name("SecondDockConfigsChanged"), object: nil)
     }
 
     // MARK: - Monitor Change
@@ -162,6 +168,14 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         let configId = window.config.id
         guard let configIndex = dockConfigs.firstIndex(where: { $0.id == configId }) else { return }
         dockConfigs[configIndex].items = items
+        saveAll()
+        NotificationCenter.default.post(name: Notification.Name("SecondDockConfigsChanged"), object: nil)
+    }
+
+    func dockWindowSizeDidChange(_ window: DockWindow, size: CGFloat) {
+        let configId = window.config.id
+        guard let configIndex = dockConfigs.firstIndex(where: { $0.id == configId }) else { return }
+        dockConfigs[configIndex].iconSize = size
         saveAll()
     }
 

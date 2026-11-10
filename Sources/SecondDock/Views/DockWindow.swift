@@ -2,6 +2,7 @@ import AppKit
 
 protocol DockWindowDelegate: AnyObject {
     func dockWindowItemsDidChange(_ window: DockWindow, items: [DockItem])
+    func dockWindowSizeDidChange(_ window: DockWindow, size: CGFloat)
     func dockWindowRequestsRemoveItem(_ window: DockWindow, item: DockItem)
     func dockWindowRequestsAddApp(_ window: DockWindow)
     func dockWindowRequestsSettings(_ window: DockWindow)
@@ -167,7 +168,16 @@ class DockWindow: NSPanel, DockContentViewDelegate {
     // MARK: - DockContentViewDelegate
 
     func dockContentViewItemsChanged(_ items: [DockItem]) {
+        config.items = items
+        contentDockView.config = config
+        positionOnScreen()
         dockDelegate?.dockWindowItemsDidChange(self, items: items)
+    }
+
+    func dockContentViewSizeChanged(_ size: CGFloat) {
+        config.iconSize = size
+        positionOnScreen()
+        dockDelegate?.dockWindowSizeDidChange(self, size: size)
     }
 
     func dockContentViewRequestsRemoveItem(_ item: DockItem) {

@@ -31,6 +31,14 @@ class DockItemView: NSView {
         wantsLayer = true
     }
 
+    func updateSize(_ newSize: CGFloat) {
+        baseSize = newSize
+        currentSize = newSize
+        iconImage = NSWorkspace.shared.icon(forFile: item.appPath)
+        iconImage?.size = NSSize(width: newSize, height: newSize)
+        needsDisplay = true
+    }
+
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -58,24 +66,17 @@ class DockItemView: NSView {
             iconRect = NSRect(x: x, y: y, width: drawSize, height: drawSize)
         }
 
-        // Draw icon with hover brightness
-        if isHovered {
-            let highlightRect = iconRect.insetBy(dx: -2, dy: -2)
-            let highlightPath = NSBezierPath(roundedRect: highlightRect, xRadius: 6, yRadius: 6)
-            NSColor.white.withAlphaComponent(0.1).setFill()
-            highlightPath.fill()
-        }
+        // Draw icon cleanly at full resolution, matching native macOS Dock
+        icon.draw(in: iconRect, from: .zero, operation: .sourceOver, fraction: 1.0)
 
-        icon.draw(in: iconRect, from: .zero, operation: .sourceOver, fraction: isHovered ? 1.0 : 0.9)
-
-        // Draw running indicator dot
+        // Draw running indicator dot (subtle glowing dot below app icon)
         if isRunning && showRunningIndicator {
-            let dotSize: CGFloat = 4
+            let dotSize: CGFloat = 4.5
             let dotX = (bounds.width - dotSize) / 2
-            let dotY: CGFloat = 1
+            let dotY: CGFloat = 1.5
             let dotRect = NSRect(x: dotX, y: dotY, width: dotSize, height: dotSize)
             let dotPath = NSBezierPath(ovalIn: dotRect)
-            NSColor.white.setFill()
+            NSColor(white: 0.95, alpha: 0.9).setFill()
             dotPath.fill()
         }
     }
@@ -83,16 +84,16 @@ class DockItemView: NSView {
     // MARK: - Mouse Events
 
     override func mouseDown(with event: NSEvent) {
-        // Bounce animation
+        // Smooth scale bounce on GPU layer without altering frame bounds
         NSAnimationContext.runAnimationGroup({ ctx in
             ctx.duration = 0.08
             ctx.allowsImplicitAnimation = true
-            self.frame = self.frame.insetBy(dx: 3, dy: 3)
+            self.layer?.transform = CATransform3DMakeScale(0.92, 0.92, 1.0)
         }, completionHandler: {
             NSAnimationContext.runAnimationGroup({ ctx in
                 ctx.duration = 0.08
                 ctx.allowsImplicitAnimation = true
-                self.frame = self.frame.insetBy(dx: -3, dy: -3)
+                self.layer?.transform = CATransform3DIdentity
             }, completionHandler: nil)
         })
 
