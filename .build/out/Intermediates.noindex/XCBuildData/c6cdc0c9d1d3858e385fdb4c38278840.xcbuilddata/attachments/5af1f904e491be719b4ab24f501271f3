@@ -1,0 +1,59 @@
+{
+  "" : {
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/SecondDock-primary.dia",
+    "emit-module-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/SecondDock-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/SecondDock-primary-emit-module.dia",
+    "pch" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/SecondDock-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/SecondDock-primary.swiftdeps"
+  },
+  "/Volumes/düz/second-doc/Sources/SecondDock/AppDelegate.swift" : {
+    "const-values" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Volumes/düz/second-doc/Sources/SecondDock/Managers/PersistenceManager.swift" : {
+    "const-values" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.swiftconstvalues",
+    "dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.d",
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.dia",
+    "index-unit-output-path" : "/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.o",
+    "llvm-bc" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.bc",
+    "object" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.o",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager.swiftdeps",
+    "swiftmodule" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/PersistenceManager~partial.swiftmodule"
+  },
+  "/Volumes/düz/second-doc/Sources/SecondDock/Managers/ScreenManager.swift" : {
+    "const-values" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.swiftconstvalues",
+    "dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.d",
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.dia",
+    "index-unit-output-path" : "/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.o",
+    "llvm-bc" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.bc",
+    "object" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.o",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager.swiftdeps",
+    "swiftmodule" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/ScreenManager~partial.swiftmodule"
+  },
+  "/Volumes/düz/second-doc/Sources/SecondDock/Models/DockModel.swift" : {
+    "const-values" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.swiftconstvalues",
+    "dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.d",
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.dia",
+    "index-unit-output-path" : "/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.o",
+    "llvm-bc" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.bc",
+    "object" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.o",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel.swiftdeps",
+    "swiftmodule" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/DockModel~partial.swiftmodule"
+  },
+  "/Volumes/düz/second-doc/Sources/SecondDock/main.swift" : {
+    "const-values" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.bc",
+    "object" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Volumes/düz/second-doc/.build/out/Intermediates.noindex/SecondDock.build/Debug/SecondDock-p.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}
