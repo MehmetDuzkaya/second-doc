@@ -54,6 +54,10 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         return dockConfigs
     }
 
+    func dockWindow(for dockId: UUID) -> DockWindow? {
+        return dockWindows[dockId]
+    }
+
     func createNewDock() {
         let newConfig = DockConfiguration(
             name: "Dock \(dockConfigs.count + 1)",
@@ -91,10 +95,9 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
         panel.title = "Uygulama Seç"
         panel.message = "Dock'a eklemek istediğiniz uygulamayı seçin"
         panel.canChooseFiles = true
-        panel.canChooseDirectories = true
+        panel.canChooseDirectories = false
         panel.treatsFilePackagesAsDirectories = false
         panel.allowsMultipleSelection = true
-        panel.allowedContentTypes = [.application]
         panel.directoryURL = URL(fileURLWithPath: "/Applications")
 
         NSApp.activate(ignoringOtherApps: true)
@@ -106,8 +109,18 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
 
         for url in panel.urls {
             let normalizedPath = url.resolvingSymlinksInPath().path
+            guard normalizedPath.hasSuffix(".app") || url.pathExtension.lowercased() == "app" else {
+                continue
+            }
+
             let item = DockItem(appPath: normalizedPath)
-            if !dockConfigs[configIndex].items.contains(where: { $0.appPath == normalizedPath }) {
+            let duplicateKey = item.appPath
+
+            let exists = dockConfigs[configIndex].items.contains {
+                $0.kind == .app && $0.appPath == duplicateKey
+            }
+
+            if !exists {
                 dockConfigs[configIndex].items.append(item)
             }
         }
@@ -189,6 +202,14 @@ class DockManager: DockWindowDelegate, DockSettingsDelegate {
 
     func dockWindowRequestsSettings(_ window: DockWindow) {
         editDock(window.config)
+    }
+
+    func dockWindowRequestsToggleVisibility(_ window: DockWindow) {
+        if window.isVisible {
+            window.orderOut(nil)
+        } else {
+            window.orderFront(nil)
+        }
     }
 
     // MARK: - DockSettingsDelegate

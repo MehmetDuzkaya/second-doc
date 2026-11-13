@@ -1,5 +1,10 @@
 /Volumes/düz/second-doc/Sources/SecondDock/AppDelegate.swift
+/Volumes/düz/second-doc/Sources/SecondDock/Managers/DockManager.swift
 /Volumes/düz/second-doc/Sources/SecondDock/Managers/PersistenceManager.swift
 /Volumes/düz/second-doc/Sources/SecondDock/Managers/ScreenManager.swift
 /Volumes/düz/second-doc/Sources/SecondDock/Models/DockModel.swift
+/Volumes/düz/second-doc/Sources/SecondDock/Views/DockContentView.swift
+/Volumes/düz/second-doc/Sources/SecondDock/Views/DockItemView.swift
+/Volumes/düz/second-doc/Sources/SecondDock/Views/DockSettingsWindow.swift
+/Volumes/düz/second-doc/Sources/SecondDock/Views/DockWindow.swift
 /Volumes/düz/second-doc/Sources/SecondDock/main.swift

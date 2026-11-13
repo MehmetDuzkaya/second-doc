@@ -5,11 +5,11 @@
       "name" : "SecondDock",
       "path" : "/Volumes/düz/second-doc",
       "projects" : [
-        "7bbb0e06c51fd7ac905431fcaa86f2a423c8d8b58f2df239800f43da5f021d56",
+        "f23a6beec6acf38b9af3c7a675c6c5e7bfd31d41a1c10bb34e00f81ccf686333",
         "cc881d653ad3b9dfac290e51ff151eb5105ca0a16879606fb1574736cbb95f8a"
       ]
     },
-    "signature" : "24a714ecf768e06a3597200cc77178de9bd3e8eb8a3ed658b7ae4b18ec909bd2",
+    "signature" : "2f6342121efd079cd04f98d7895084cd0629ef7c1bdfa4c1507bad89d927e1aa",
     "type" : "workspace"
   },
   {
@@ -209,6 +209,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_1",
+                "name" : "Managers/DockManager.swift",
+                "path" : "Managers/DockManager.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_2",
                 "name" : "Managers/PersistenceManager.swift",
                 "path" : "Managers/PersistenceManager.swift",
                 "sourceTree" : "<group>",
@@ -216,7 +224,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_2",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_3",
                 "name" : "Managers/ScreenManager.swift",
                 "path" : "Managers/ScreenManager.swift",
                 "sourceTree" : "<group>",
@@ -224,7 +232,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_3",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_4",
                 "name" : "Models/DockModel.swift",
                 "path" : "Models/DockModel.swift",
                 "sourceTree" : "<group>",
@@ -232,7 +240,39 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_4",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_5",
+                "name" : "Views/DockContentView.swift",
+                "path" : "Views/DockContentView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_6",
+                "name" : "Views/DockItemView.swift",
+                "path" : "Views/DockItemView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_7",
+                "name" : "Views/DockSettingsWindow.swift",
+                "path" : "Views/DockSettingsWindow.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_8",
+                "name" : "Views/DockWindow.swift",
+                "path" : "Views/DockWindow.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_9",
                 "name" : "main.swift",
                 "path" : "main.swift",
                 "sourceTree" : "<group>",
@@ -258,6 +298,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_1",
+                "name" : "Managers/DockManager.swift",
+                "path" : "Managers/DockManager.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_2",
                 "name" : "Managers/PersistenceManager.swift",
                 "path" : "Managers/PersistenceManager.swift",
                 "sourceTree" : "<group>",
@@ -265,7 +313,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_2",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_3",
                 "name" : "Managers/ScreenManager.swift",
                 "path" : "Managers/ScreenManager.swift",
                 "sourceTree" : "<group>",
@@ -273,7 +321,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_3",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_4",
                 "name" : "Models/DockModel.swift",
                 "path" : "Models/DockModel.swift",
                 "sourceTree" : "<group>",
@@ -281,7 +329,39 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_4",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_5",
+                "name" : "Views/DockContentView.swift",
+                "path" : "Views/DockContentView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_6",
+                "name" : "Views/DockItemView.swift",
+                "path" : "Views/DockItemView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_7",
+                "name" : "Views/DockSettingsWindow.swift",
+                "path" : "Views/DockSettingsWindow.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_8",
+                "name" : "Views/DockWindow.swift",
+                "path" : "Views/DockWindow.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_9",
                 "name" : "main.swift",
                 "path" : "main.swift",
                 "sourceTree" : "<group>",
@@ -307,12 +387,12 @@
       "projectIsPackage" : "true",
       "projectName" : "SecondDock",
       "targets" : [
-        "8ee0a8c37d4681cf9bed924490c5716e3fac1d35e6a43ee42b716e3d8eead3f7",
-        "e38b513bbb33b21868421387c3d0248ccd453a095c6d781e3e0310ccb165f054",
+        "f3960acbc210a7f23558e2ace571d2955b3e1d9653e025b1f4f5266e0687fb28",
+        "ee9a3b8520ef13a0cb88491c0177b7d8fc0429a4ac7e151bfb07876f1c899298",
         "ec3dc5e3cae2a94f4f7e6a7ae573cf40c880219496596b79220a69eb3b55d68f"
       ]
     },
-    "signature" : "7bbb0e06c51fd7ac905431fcaa86f2a423c8d8b58f2df239800f43da5f021d56",
+    "signature" : "f23a6beec6acf38b9af3c7a675c6c5e7bfd31d41a1c10bb34e00f81ccf686333",
     "type" : "project"
   },
   {
@@ -461,6 +541,51 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_5",
+              "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_6",
+              "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_7",
+              "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_8",
+              "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_2::REF_9",
+              "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-PRODUCT:second-doc_SecondDock.SecondDock::BUILDPHASE_0",
@@ -486,7 +611,7 @@
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "8ee0a8c37d4681cf9bed924490c5716e3fac1d35e6a43ee42b716e3d8eead3f7",
+    "signature" : "f3960acbc210a7f23558e2ace571d2955b3e1d9653e025b1f4f5266e0687fb28",
     "type" : "target"
   },
   {
@@ -666,6 +791,51 @@
 
               ],
               "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_5",
+              "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_6",
+              "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_7",
+              "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_8",
+              "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:second-doc::MAINGROUP::REF_3::REF_9",
+              "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
             }
           ],
           "guid" : "PACKAGE-TARGET:SecondDock--79ED8CEB4DC1D719-testable::BUILDPHASE_0",
@@ -691,7 +861,7 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "e38b513bbb33b21868421387c3d0248ccd453a095c6d781e3e0310ccb165f054",
+    "signature" : "ee9a3b8520ef13a0cb88491c0177b7d8fc0429a4ac7e151bfb07876f1c899298",
     "type" : "target"
   },
   {

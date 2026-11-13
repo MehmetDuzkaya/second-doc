@@ -71,8 +71,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 submenu.addItem(infoItem)
                 submenu.addItem(.separator())
 
-                // "Uygulama Ekle..." action
-                let addItem = NSMenuItem(title: "Uygulama Ekle...", action: #selector(addAppToDock(_:)), keyEquivalent: "")
+                // "Uygulama veya Dosya Ekle..." action
+                let addItem = NSMenuItem(title: "Uygulama veya Dosya Ekle...", action: #selector(addAppToDock(_:)), keyEquivalent: "")
                 addItem.target = self
                 addItem.representedObject = dock.id
                 submenu.addItem(addItem)
@@ -127,10 +127,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    @objc func toggleDockVisibility(_ sender: NSMenuItem) {
+        guard let id = sender.representedObject as? UUID,
+             let window = DockManager.shared.dockWindow(for: id) else { return }
+        if window.isVisible {
+           window.orderOut(nil)
+        } else {
+           window.orderFront(nil)
+        }
+    }
+
     @objc func editDock(_ sender: NSMenuItem) {
         if let id = sender.representedObject as? UUID,
            let config = DockManager.shared.allDocks.first(where: { $0.id == id }) {
-            DockManager.shared.editDock(config)
+           DockManager.shared.editDock(config)
         }
     }
 

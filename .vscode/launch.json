@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:second-doc}",
+            "name": "Debug SecondDock",
+            "target": "SecondDock",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug SecondDock"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:second-doc}",
+            "name": "Release SecondDock",
+            "target": "SecondDock",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release SecondDock"
+        }
+    ]
+}

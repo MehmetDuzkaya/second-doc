@@ -16,7 +16,7 @@ class DockItemView: NSView {
 
     private var iconImage: NSImage?
     private var trackingArea: NSTrackingArea?
-    private var isHovered: Bool = false
+    private var previewWindowController: NSWindowController?
 
     init(item: DockItem, size: CGFloat) {
         self.item = item
@@ -25,16 +25,23 @@ class DockItemView: NSView {
         super.init(frame: NSRect(x: 0, y: 0, width: size, height: size))
 
         toolTip = item.name
-        iconImage = NSWorkspace.shared.icon(forFile: item.appPath)
+        iconImage = makeIconImage()
         iconImage?.size = NSSize(width: size, height: size)
 
         wantsLayer = true
     }
 
+    private func makeIconImage() -> NSImage? {
+        if item.kind == .file, let fileURL = item.filePath.flatMap(URL.init(fileURLWithPath:)) {
+            return NSWorkspace.shared.icon(forFile: fileURL.path)
+        }
+        return NSWorkspace.shared.icon(forFile: item.appPath)
+    }
+
     func updateSize(_ newSize: CGFloat) {
         baseSize = newSize
         currentSize = newSize
-        iconImage = NSWorkspace.shared.icon(forFile: item.appPath)
+        iconImage = makeIconImage()
         iconImage?.size = NSSize(width: newSize, height: newSize)
         needsDisplay = true
     }
@@ -53,11 +60,9 @@ class DockItemView: NSView {
 
         let iconRect: NSRect
         if showRunningIndicator {
-            // Leave space for indicator dot at the bottom
-            let availableHeight = bounds.height - 6
-            let drawSize = min(currentSize, availableHeight)
+            let drawSize = min(currentSize, bounds.height)
             let x = (bounds.width - drawSize) / 2
-            let y = (availableHeight - drawSize) / 2 + 6
+            let y = (bounds.height - drawSize) / 2
             iconRect = NSRect(x: x, y: y, width: drawSize, height: drawSize)
         } else {
             let drawSize = currentSize
@@ -66,10 +71,8 @@ class DockItemView: NSView {
             iconRect = NSRect(x: x, y: y, width: drawSize, height: drawSize)
         }
 
-        // Draw icon cleanly at full resolution, matching native macOS Dock
         icon.draw(in: iconRect, from: .zero, operation: .sourceOver, fraction: 1.0)
 
-        // Draw running indicator dot (subtle glowing dot below app icon)
         if isRunning && showRunningIndicator {
             let dotSize: CGFloat = 4.5
             let dotX = (bounds.width - dotSize) / 2
@@ -84,20 +87,18 @@ class DockItemView: NSView {
     // MARK: - Mouse Events
 
     override func mouseDown(with event: NSEvent) {
-        // Smooth scale bounce on GPU layer without altering frame bounds
-        NSAnimationContext.runAnimationGroup({ ctx in
-            ctx.duration = 0.08
-            ctx.allowsImplicitAnimation = true
-            self.layer?.transform = CATransform3DMakeScale(0.92, 0.92, 1.0)
-        }, completionHandler: {
-            NSAnimationContext.runAnimationGroup({ ctx in
-                ctx.duration = 0.08
-                ctx.allowsImplicitAnimation = true
-                self.layer?.transform = CATransform3DIdentity
-            }, completionHandler: nil)
-        })
+        if item.kind == .file, let fileURL = item.filePath.flatMap(URL.init(fileURLWithPath:)) {
+            if event.clickCount >= 2 {
+                NSWorkspace.shared.open(fileURL)
+                delegate?.dockItemClicked(item)
+                return
+            }
 
-        // Launch the application
+            openPreview(for: fileURL)
+            delegate?.dockItemClicked(item)
+            return
+        }
+
         let appURL = URL(fileURLWithPath: item.appPath)
         let configuration = NSWorkspace.OpenConfiguration()
         NSWorkspace.shared.openApplication(at: appURL, configuration: configuration) { _, _ in }
@@ -108,14 +109,13 @@ class DockItemView: NSView {
     override func rightMouseDown(with event: NSEvent) {
         let menu = NSMenu()
 
-        // App name as header
         let headerItem = NSMenuItem(title: item.name, action: nil, keyEquivalent: "")
         headerItem.isEnabled = false
         menu.addItem(headerItem)
 
         menu.addItem(NSMenuItem.separator())
 
-        let openItem = NSMenuItem(title: "Uygulamayı Aç", action: #selector(openApp), keyEquivalent: "")
+        let openItem = NSMenuItem(title: item.kind == .file ? "Dosyayı Aç" : "Uygulamayı Aç", action: #selector(openItem), keyEquivalent: "")
         openItem.target = self
         menu.addItem(openItem)
 
@@ -132,19 +132,81 @@ class DockItemView: NSView {
         NSMenu.popUpContextMenu(menu, with: event, for: self)
     }
 
-    @objc private func openApp() {
+    @objc private func openItem() {
+        if item.kind == .file, let fileURL = item.filePath.flatMap(URL.init(fileURLWithPath:)) {
+            openPreview(for: fileURL)
+            return
+        }
         let appURL = URL(fileURLWithPath: item.appPath)
         let configuration = NSWorkspace.OpenConfiguration()
         NSWorkspace.shared.openApplication(at: appURL, configuration: configuration) { _, _ in }
     }
 
     @objc private func showInFinder() {
-        let appURL = URL(fileURLWithPath: item.appPath)
-        NSWorkspace.shared.activateFileViewerSelecting([appURL])
+        let targetURL: URL
+        if let filePath = item.filePath {
+            targetURL = URL(fileURLWithPath: filePath)
+        } else {
+            targetURL = URL(fileURLWithPath: item.appPath)
+        }
+        NSWorkspace.shared.activateFileViewerSelecting([targetURL])
     }
 
     @objc private func removeFromDock() {
         delegate?.dockItemRemoveRequested(item)
+    }
+
+    private func openPreview(for url: URL) {
+        if let existing = previewWindowController?.window, existing.isVisible {
+            existing.close()
+        }
+
+        let window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 720, height: 500),
+            styleMask: [.titled, .closable, .resizable, .miniaturizable],
+            backing: .buffered,
+            defer: false
+        )
+        window.title = url.lastPathComponent
+        window.center()
+        window.makeKeyAndOrderFront(nil)
+        window.level = .floating
+
+        let contentView = NSView(frame: window.contentLayoutRect)
+        contentView.wantsLayer = true
+
+        let imageView = NSImageView(frame: contentView.bounds)
+        imageView.imageScaling = .scaleProportionallyUpOrDown
+        imageView.autoresizingMask = [.width, .height]
+
+        if let image = NSImage(contentsOf: url) {
+            imageView.image = image
+        } else {
+            let fallback = NSWorkspace.shared.icon(forFile: url.path)
+            fallback.size = NSSize(width: 128, height: 128)
+            imageView.image = fallback
+        }
+
+        let labels = NSTextField(wrappingLabelWithString: "\(url.lastPathComponent)\n\(url.path)")
+        labels.isEditable = false
+        labels.isBordered = false
+        labels.isBezeled = false
+        labels.drawsBackground = false
+        labels.font = NSFont.systemFont(ofSize: 13)
+        labels.textColor = .labelColor
+
+        let stack = NSStackView(frame: NSRect(x: 16, y: 16, width: contentView.bounds.width - 32, height: contentView.bounds.height - 32))
+        stack.orientation = .vertical
+        stack.spacing = 16
+        stack.addView(imageView, in: .center)
+        stack.addView(labels, in: .center)
+        stack.setVisibilityPriority(.mustHold, for: imageView)
+        stack.setVisibilityPriority(.mustHold, for: labels)
+        contentView.addSubview(stack)
+        window.contentView = contentView
+
+        previewWindowController = NSWindowController(window: window)
+        previewWindowController?.showWindow(nil)
     }
 
     // MARK: - Tracking Areas
@@ -167,20 +229,12 @@ class DockItemView: NSView {
         }
     }
 
-    override func mouseEntered(with event: NSEvent) {
-        isHovered = true
-        needsDisplay = true
-    }
-
-    override func mouseExited(with event: NSEvent) {
-        isHovered = false
-        needsDisplay = true
-    }
-
     // MARK: - Running State
 
     func updateRunningState() {
-        if let bid = item.bundleIdentifier {
+        if item.kind == .file {
+            isRunning = false
+        } else if let bid = item.bundleIdentifier {
             isRunning = NSWorkspace.shared.runningApplications.contains { $0.bundleIdentifier == bid }
         } else {
             isRunning = false

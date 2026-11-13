@@ -2,628 +2,628 @@
   {
     "isFramework" : true,
     "moduleName" : "Accessibility",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-1U7XU6S8LBWEN.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-2JXOTPY6SAF26.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "AppKit",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-1DVGQFUCA1758.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-2YZQJIXY3DNJN.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "ColorSync",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-2OAH0Y6LRRUE3.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-2TD8OCXQ9E1FR.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "Combine",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Combine-2GKOTT0N7TBRE.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Combine-31X5GZ05D9QUT.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "CoreData",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-2CAMXYSBR59EU.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-2HYRFJNOY1RXP.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "CoreFoundation",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-1M0A2EWSU6RTX.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-1LJQREM1TJGUC.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "CoreGraphics",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-2I1GBBCP62S8E.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-2MG3OZMT58EIL.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "CoreImage",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-NV29NMKGVTNZ.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-10VUAW0PDMITC.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "CoreText",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-JITAIBNDEACO.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-32P0CGVYY444J.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "CoreTransferable",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-DQUM09QIXKW3.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-OL88NDV4ZZPX.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "CoreVideo",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-39MFKK7GPZP8V.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-6NL3IKC3T2OP.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Darwin",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-AY8KN9623AZ0.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-TI0S2FJPGYW8.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "DataDetection",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-31JA6UR5Z577Y.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-UA01MZ7RF3AN.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "DeveloperToolsSupport",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-1ZF1CMFASV9S0.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-322VS8JCJV7EG.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Dispatch",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-1IHO4S0JIGOE0.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-1QUUM7SO7PRSH.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "Foundation",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-5MMN6J1ABLQJ.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-3C9DRRF34DOZW.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "IOKit",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-35P9JF5I5AGCO.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-369ZYB5VNSOVS.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "ImageIO",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-252LEM2PH7891.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-1AJWOTVF2MB7.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Metal",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-22MQVBO2FIG5S.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-3Q6RYGNQ2I7BX.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "OSLog",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-3TQH1CZF4DLOU.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-22DDZ1I5AKH6N.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "ObjectiveC",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-2WXGFAPA7EA7B.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-2R6G70T7C0TP9.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Observation",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Observation-42EF39YYLYEK.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Observation-2PLQ1QV0QCVUO.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "QuartzCore",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-1P32S65W4FC78.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-35GZGF99RGU3Y.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Spatial",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-1450GEWBDROUS.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-3FCCAIM2QBD4F.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "Swift",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Swift-1HFBMPXKKC4XI.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Swift-YKWZ8L6XR4P0.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "SwiftOnoneSupport",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftOnoneSupport-25GJG29BTBXHU.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftOnoneSupport-2WL6P2SK5NVI2.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "SwiftUICore",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-1JNOR23CK4YE9.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-2PFNU4UNKM783.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "Symbols",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-1A6PHT1UBWUKL.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-H4T6FE45DRHP.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "System",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/System-J9H50FIQKRIQ.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/System-ZLYR2TDMOKVS.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-39PAFIRKZM5ZE.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-18MQRJXJSO2HA.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "XPC",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-12TT87QZGD26S.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-1ENWOZ1AMOFDP.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_Builtin_float",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-2YPF218W6DNKU.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-15CN7TJOF8SWS.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_Concurrency",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Concurrency-TBEWL355JULX.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Concurrency-EQYQ15FIRKNA.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-3IDXP3249M3JM.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-171C19LFO7U9I.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-3RDZFZ1Q2JUM7.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-VYQV0USIOLEK.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-LKIPQWWXSAT2.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-2E10UA5URYTUJ.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "_StringProcessing",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_StringProcessing-2AXZ8NJ6TEG7B.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_StringProcessing-3W1Z2P7DWA3UM.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "os",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os-161AZNQ771M3G.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os-J2YON0TBDWQX.swiftmodule"
   },
   {
     "isFramework" : false,
     "moduleName" : "simd",
-    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/simd-2CKPA8WZT4RI4.swiftmodule"
+    "modulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/simd-3E9X533KC7P61.swiftmodule"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-8DCPTC0UUEWHQ1B09Z8F67X1X.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-CDRFACJCWV2NSO3X16FP4Y2PK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-73N0GYEVJP124WKVK0A1ZUI2.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-5T7S1C9AMENKVRXRDCT9MQUBI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "AppKit"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-1GC8WFCYDJTDOL4KKW7P03IAE.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-38G1Q7FZ3SS4A0TV08JD660ON.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ApplicationServices"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-DFCCY22CFZQNUW7E7IFTFA5H3.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-9R8TEI0DUDBKW836Z2RQEP74.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CFNetwork"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/cups.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-6X9K75LDEZC421II3F4GWMPO5.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-BDGCG32JAZEPJY1U6ROXCOK3F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CUPS"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-6UZHHSE70HMGW2X4AILKK8XRQ.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-EP9HZ1AIDLMIF8LUF694FP3UV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ColorSync"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-1ZQUYMOIL5D9QEIID1BD9XT0I.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-DEHWM8KU8GX1SFRUU34188VMY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-A2ZMZI3RNVTV0W3TFCEV7T7QM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-EJ20AUURDJ2J0XQWZGCU2W329.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-73QS4YU4PB9CE7JL14L3G6XM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-LR373TCI2LQEMVFYPSV18T6G.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-AFTZYQPMHDV333GXJ4V7X1QHO.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-68C5SF59ZPL4OM0JM6LYD2470.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreImage"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-7QQGLT9EMPAOTMLDGTN9JWFPL.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-8P58Z8UE2A1EM2L7W1UOEBJ4K.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreServices"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-39M50Y9GU1DQS9ZGX2LRA5LOW.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-1O3K3I93U74HF6YGPGXV8YJDI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-30GMS889ZBYRH4VWKQ6QJ43XM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-84VYES87U76HA0W2GY06GK3NZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-AY25KX5238SDUEOHRMEC7471K.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-4AZB37IT266CQLIX5S3I9KOSW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-6BE9KTU4UBQML20BM8R5NMOI3.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-BN8P48CUGXF943R9PB96OJE4M.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-AMSUV8ZHXBFPUDFJ8I4SS9Q98.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-F5H0ZDOIMGNDTPWNRY8W93AP1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-82SGLKSB4WORDUJ30XYI5JGG5.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-ABHJA7LRI7FG8EXP8CRH4ILDO.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-1JIDE7VCAUU6V4SADBGDZ628N.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-A4HM0PZY97GYHQ677PDWFZO6Y.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DiskArbitration"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-D3V9TOBVQXCZB9WHBYOVY9E27.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-9C4SGTUPBWI7FWBF7M40R4HR3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-4TQKM4EU35L3YX2I18AVNDWV0.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-9I8X6FGE0EBXLVM2DBE4LMN05.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-EB63GZJ8BKTLWZRHHNMKOB9C4.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-C6FRZ78FPZMBV6ZAM7R3DO53W.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOKit"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-D772LJQX5O66NIQ5W4K3RAPDY.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-ESCWA5II40ZU7O4RYSE9RRS4X.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOSurface"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-B46XSP03O89O44DIBQBVZHLTK.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-9F7ZGE1ZQ70T4ULVP4QI0GU79.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ImageIO"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-9YXSMLA88M1Y9CRIVXGIBAQA7.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-AKANIVEKURXBKCT8TC192PWU3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-7HQTWLKYOLJVMY393KT99WCJU.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-28L1AUFM87RNN4P5SUEQ9LP2G.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Metal"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-DASYP7M9KY1PPWG6A7VNA9LIJ.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-BE85H8AFHXD1HPB356PQKYZK3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-9TAN5YS5KH307FHNPLCR6W0SN.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-1XBJW0XJ9XH4G1HKQ0BE2961L.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-3QRXELW02KMDRZFGOIHQRCYSB.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-423BKIN5AC8QNXSXFSVB8LBW3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OpenGL"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-5J2HR33RTSHP3NXLEDD5UUZLF.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-DB1QC0K6NML02H9EACSO95SVQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Security-3U3PRRHLX6J952B5KGYAYTETI.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Security-MM6HZZ9ZKQPGMNBFDF6SYTP3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-V4LBE8P70RKTV487KAV129GE.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-42B6L7VFFJ6653WKCI0HNCIWM.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-EFHNC9WADN5ODYIHJEN1EFRWH.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-B7URJCP6XM90G2GY9SNZOBL60.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-EY248VLQAUEN69G0PCD282DA.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-23W96RCAUA05WKZCPFD3NI3S0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-B3M39874SVOHYNK9EYSBR7VFF.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-9PXKY5FUZ8B4N1UHO470ILQP2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-96B5EMMDUJNH9OZ5FFOSG1G7B.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-38BZXLQCFC7NUMCPTKPQ4R3ZN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-EVHEVOH2FQCQ1125ISV34B420.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-CFX70XAK6MGYK7ELSV92B3XGO.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-AW3AXCPWE308W9MJR60AHKDL2.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-8AO0V0MZNBT35M6WUU0ES0CS0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-ANDLO646U7LG5BNANVDXZWMRA.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-CJ024MGZEWEEN679F4CYCZ1MI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-DCE0EKSM95H09R9IU26P5U8DM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-C7510XXS5VZQJ9MYEADZ6Y7M7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-3VZ2BT96MLWSJ4F2QAW317YG2.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-8I8MLI298GBNMGVZ6OXTNQ7DO.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-7GOF3C454HRKAHX31GS2YNODC.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-1DSRM0UM48H70LSNKW9T8Q2CH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-DU7W67AJ1KZ0K3CWPN9JX8FJP.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-9SZHJ9P5LRG8GA39PAGWGXF8M.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-6BCRXSJ4J0WPX7T6GVAE68IIF.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-7R0ZT417XVPKZND54K6A1NZ2K.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-8YLV70OUFYSLISDKDXPIO6MV0.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-9LK5ZBETWDV1V8S2UXOSFRYKY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-74KE9GJBIHJNS4AG3RTI4VOXW.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-8JMWADHAG1JP71QBNJHW8N9W0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-7UKEL76NUOBAN64BTGNZCUHBV.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-CP1S105A5INS4LO6FHLLCSHTC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-NAJXQXQ9259IXFJ4GBDE7PVN.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-77AK6KF69DZEB40QI042DHYOP.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-BIJVNJ7KR83UU0TPXG0YVDQFN.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-505Q9Z0AYTHQXSZUTBGQQODC4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-6JXDJ0FI35WY78TJZ0CO72GUY.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-7H933LY1USWIMYZFO8HRX5573.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-2NWBEQDZLDIASN5Z86PXZGCMG.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-1ZXIWW88STIPSYYW26RU0G1Z9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-7IOVAVEHUS7HLI0SJFEI2JZWM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-11TEKIZUPA7AGDYWLE92SGN4X.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/launch.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/launch-1G247PKMDN8CK3TS7UR3M6IJC.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/launch-EZT5K9I6ZG2UL1APW4RS16WP3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "launch"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libDER\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-EJHKCWBGRUQB3PQ1CTUG9RW2U.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-AQLDY5JMJ3UG2B498ZJAGWYZX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libDER"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/libkern.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-36OQ8SNSKOSB1HH0XHQEN1PPB.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-8HBR1HB2FTIZIICE12PYE7GZA.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libkern"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os-CYCAUJQLZCNDUPO5KHWG3XKCU.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os-5AO6CCNTJZ21UWAGP4D7J49Y6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-ASCLKFWRL73WESU8OV9Z2KM5O.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-6MMPMO7AYPB1RED5MY9E251ZG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-H8EN1Z32TNQULYZWHZW6PIZV.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-B3EV36VTAUJBXLMHV5BQ7TL1W.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-AOLAQIJJ7AH7WWV5IN5RZTLO5.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-DVFXHCLXNAZUMF1FVIZ5JO5PT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-93NXPP3CXTEACEHU7P7QD15RK.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-4OGZIX2XNTPDNS3DZYABS1J7L.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/simd-DK6UGP9JXYFQRRDKSSOXXNWAZ.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/simd-50AAXIVBUN6YL4FYX0KTB1Y71.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/c_standard_library.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-1CA86PG09JO53MJPWM08U0YEM.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-LNJ7RNBNBIWQLD20M117U8N3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "string_h"
   },
   {
     "clangModuleMapPath" : "\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX27.0.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-5T5X6IQUDQRMZ62D58SEHWVNV.pcm",
+    "clangModulePath" : "\/Volumes\/düz\/second-doc\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-6PXYORLUQ0CKMFXW8AJEPYWT0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"

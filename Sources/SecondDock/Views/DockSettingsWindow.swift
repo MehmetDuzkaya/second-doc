@@ -17,10 +17,10 @@ class DockSettingsWindow: NSWindow {
     private var positionPopup: NSPopUpButton!
     private var iconSizeSlider: NSSlider!
     private var iconSizeLabel: NSTextField!
+    private var opacitySlider: NSSlider!
+    private var opacityLabel: NSTextField!
     private var autoHideCheckbox: NSButton!
-    private var magnificationCheckbox: NSButton!
-    private var magnificationSlider: NSSlider!
-    private var magnificationSizeLabel: NSTextField!
+    private var hideInFullScreenCheckbox: NSButton!
     private var runningIndicatorCheckbox: NSButton!
 
     init(config: DockConfiguration?, isNew: Bool) {
@@ -37,9 +37,10 @@ class DockSettingsWindow: NSWindow {
                 items: [],
                 iconSize: 48,
                 autoHide: false,
-                magnification: true,
+                magnification: false,
                 magnificationSize: 64,
-                showRunningIndicator: true
+                showRunningIndicator: true,
+                hideInFullScreen: true
             )
         }
 
@@ -121,33 +122,33 @@ class DockSettingsWindow: NSWindow {
         container.addSubview(iconSizeSlider)
         y -= rowSpacing + 8
 
+        // Background opacity
+        let opacityLabelText = makeLabel("Saydamlık:", frame: NSRect(x: leftMargin, y: y, width: 100, height: labelHeight))
+        container.addSubview(opacityLabelText)
+        opacityLabel = makeLabel("35%", frame: NSRect(x: leftMargin + fieldWidth - 40, y: y, width: 40, height: labelHeight))
+        opacityLabel.alignment = .right
+        container.addSubview(opacityLabel)
+        y -= fieldHeight + 4
+        opacitySlider = NSSlider(frame: NSRect(x: leftMargin, y: y, width: fieldWidth, height: fieldHeight))
+        opacitySlider.minValue = 0.1
+        opacitySlider.maxValue = 1.0
+        opacitySlider.doubleValue = 0.35
+        opacitySlider.isContinuous = true
+        opacitySlider.target = self
+        opacitySlider.action = #selector(opacitySliderChanged(_:))
+        container.addSubview(opacitySlider)
+        y -= rowSpacing + 8
+
         // Auto-hide
         autoHideCheckbox = NSButton(checkboxWithTitle: "Otomatik Gizle", target: nil, action: nil)
         autoHideCheckbox.frame = NSRect(x: leftMargin, y: y, width: fieldWidth, height: 20)
         container.addSubview(autoHideCheckbox)
         y -= rowSpacing + 8
 
-        // Magnification
-        magnificationCheckbox = NSButton(checkboxWithTitle: "Büyütme Efekti", target: self, action: #selector(magnificationToggled(_:)))
-        magnificationCheckbox.frame = NSRect(x: leftMargin, y: y, width: fieldWidth, height: 20)
-        container.addSubview(magnificationCheckbox)
-        y -= rowSpacing + labelHeight
-
-        // Magnification Size
-        let magSizeLabel = makeLabel("Büyütme Boyutu:", frame: NSRect(x: leftMargin, y: y, width: 120, height: labelHeight))
-        container.addSubview(magSizeLabel)
-        magnificationSizeLabel = makeLabel("64", frame: NSRect(x: leftMargin + fieldWidth - 40, y: y, width: 40, height: labelHeight))
-        magnificationSizeLabel.alignment = .right
-        container.addSubview(magnificationSizeLabel)
-        y -= fieldHeight + 4
-        magnificationSlider = NSSlider(frame: NSRect(x: leftMargin, y: y, width: fieldWidth, height: fieldHeight))
-        magnificationSlider.minValue = 48
-        magnificationSlider.maxValue = 128
-        magnificationSlider.doubleValue = 64
-        magnificationSlider.isContinuous = true
-        magnificationSlider.target = self
-        magnificationSlider.action = #selector(magnificationSliderChanged(_:))
-        container.addSubview(magnificationSlider)
+        // Hide in full screen
+        hideInFullScreenCheckbox = NSButton(checkboxWithTitle: "Tam Ekranda Otomatik Gizle", target: nil, action: nil)
+        hideInFullScreenCheckbox.frame = NSRect(x: leftMargin, y: y, width: fieldWidth, height: 20)
+        container.addSubview(hideInFullScreenCheckbox)
         y -= rowSpacing + 8
 
         // Running indicator
@@ -215,12 +216,12 @@ class DockSettingsWindow: NSWindow {
         iconSizeSlider.doubleValue = Double(config.iconSize)
         iconSizeLabel.stringValue = "\(Int(config.iconSize))"
 
+        opacitySlider.doubleValue = config.backgroundOpacity
+        opacityLabel.stringValue = "\(Int(config.backgroundOpacity * 100))%"
+
         autoHideCheckbox.state = config.autoHide ? .on : .off
 
-        magnificationCheckbox.state = config.magnification ? .on : .off
-        magnificationSlider.doubleValue = Double(config.magnificationSize)
-        magnificationSlider.isEnabled = config.magnification
-        magnificationSizeLabel.stringValue = "\(Int(config.magnificationSize))"
+        hideInFullScreenCheckbox.state = config.hideInFullScreen ? .on : .off
 
         runningIndicatorCheckbox.state = config.showRunningIndicator ? .on : .off
     }
@@ -256,9 +257,11 @@ class DockSettingsWindow: NSWindow {
         config.position = positions[positionPopup.indexOfSelectedItem]
 
         config.iconSize = CGFloat(iconSizeSlider.integerValue)
+        config.backgroundOpacity = opacitySlider.doubleValue
         config.autoHide = autoHideCheckbox.state == .on
-        config.magnification = magnificationCheckbox.state == .on
-        config.magnificationSize = CGFloat(magnificationSlider.integerValue)
+        config.magnification = false
+        config.magnificationSize = config.iconSize
+        config.hideInFullScreen = hideInFullScreenCheckbox.state == .on
         config.showRunningIndicator = runningIndicatorCheckbox.state == .on
 
         settingsDelegate?.dockSettingsDidSave(config, isNew: isNewDock)
@@ -289,11 +292,7 @@ class DockSettingsWindow: NSWindow {
         iconSizeLabel.stringValue = "\(sender.integerValue)"
     }
 
-    @objc func magnificationSliderChanged(_ sender: NSSlider) {
-        magnificationSizeLabel.stringValue = "\(sender.integerValue)"
-    }
-
-    @objc func magnificationToggled(_ sender: NSButton) {
-        magnificationSlider.isEnabled = sender.state == .on
+    @objc func opacitySliderChanged(_ sender: NSSlider) {
+        opacityLabel.stringValue = "\(Int(sender.doubleValue * 100))%"
     }
 }

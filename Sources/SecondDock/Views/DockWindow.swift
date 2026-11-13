@@ -6,6 +6,7 @@ protocol DockWindowDelegate: AnyObject {
     func dockWindowRequestsRemoveItem(_ window: DockWindow, item: DockItem)
     func dockWindowRequestsAddApp(_ window: DockWindow)
     func dockWindowRequestsSettings(_ window: DockWindow)
+    func dockWindowRequestsToggleVisibility(_ window: DockWindow)
 }
 
 class DockWindow: NSPanel, DockContentViewDelegate {
@@ -16,11 +17,12 @@ class DockWindow: NSPanel, DockContentViewDelegate {
     private var hideTimer: Timer?
     private var edgeTrackingArea: NSTrackingArea?
     private var isAutoHidden: Bool = false
+    private var isFullScreenHidden: Bool = false
 
     init(config: DockConfiguration) {
         self.config = config
 
-        let initialFrame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.count, 1))
+        let initialFrame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.filter { $0.kind == .app }.count, 1))
 
         super.init(
             contentRect: initialFrame,
@@ -30,7 +32,7 @@ class DockWindow: NSPanel, DockContentViewDelegate {
         )
 
         level = .floating
-        collectionBehavior = [.canJoinAllSpaces, .stationary, .fullScreenAuxiliary]
+        updateCollectionBehavior()
         isOpaque = false
         backgroundColor = .clear
         hasShadow = true
@@ -43,6 +45,27 @@ class DockWindow: NSPanel, DockContentViewDelegate {
 
         positionOnScreen()
         setupAutoHide()
+
+        // Observe active space / full screen changes
+        NSWorkspace.shared.notificationCenter.addObserver(
+            self,
+            selector: #selector(handleSpaceOrScreenChange),
+            name: NSWorkspace.activeSpaceDidChangeNotification,
+            object: nil
+        )
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleSpaceOrScreenChange),
+            name: NSApplication.didChangeScreenParametersNotification,
+            object: nil
+        )
+    }
+
+    deinit {
+        NSWorkspace.shared.notificationCenter.removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
+        hideTimer?.invalidate()
     }
 
     // MARK: - Configuration Update
@@ -51,14 +74,57 @@ class DockWindow: NSPanel, DockContentViewDelegate {
         config = newConfig
         contentDockView.config = newConfig
         contentDockView.rebuildItems()
+        updateCollectionBehavior()
         positionOnScreen()
         setupAutoHide()
+        handleSpaceOrScreenChange()
+    }
+
+    private func updateCollectionBehavior() {
+        if config.hideInFullScreen {
+            // Excludes fullScreenAuxiliary so macOS automatically hides the window on full-screen spaces
+            collectionBehavior = [.canJoinAllSpaces, .stationary]
+        } else {
+            collectionBehavior = [.canJoinAllSpaces, .stationary, .fullScreenAuxiliary]
+        }
     }
 
     func positionOnScreen() {
-        let frame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.count, 1))
+        let frame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.filter { $0.kind == .app }.count, 1))
         setFrame(frame, display: true, animate: true)
         contentDockView.frame = NSRect(origin: .zero, size: frame.size)
+    }
+
+    // MARK: - Full Screen Detection
+
+    @objc private func handleSpaceOrScreenChange() {
+        guard config.hideInFullScreen else {
+            if isFullScreenHidden {
+                isFullScreenHidden = false
+                animator().alphaValue = isAutoHidden ? 0.3 : 1.0
+            }
+            return
+        }
+
+        let targetScreen = ScreenManager.shared.screen(at: config.screenIndex)
+        // When a screen is in native full-screen mode, the menu bar is hidden,
+        // so visibleFrame matches screen.frame.
+        let isFullScreen = (targetScreen.visibleFrame.size == targetScreen.frame.size)
+
+        if isFullScreen {
+            isFullScreenHidden = true
+            NSAnimationContext.runAnimationGroup { ctx in
+                ctx.duration = 0.2
+                self.animator().alphaValue = 0.0
+            }
+        } else if isFullScreenHidden {
+            isFullScreenHidden = false
+            positionOnScreen()
+            NSAnimationContext.runAnimationGroup { ctx in
+                ctx.duration = 0.2
+                self.animator().alphaValue = self.isAutoHidden ? 0.3 : 1.0
+            }
+        }
     }
 
     // MARK: - Auto-hide
@@ -79,7 +145,6 @@ class DockWindow: NSPanel, DockContentViewDelegate {
             return
         }
 
-        // Set up tracking area on the content view to detect mouse enter/exit
         if let cv = contentView {
             let area = NSTrackingArea(
                 rect: cv.bounds,
@@ -102,7 +167,7 @@ class DockWindow: NSPanel, DockContentViewDelegate {
         hideTimer?.invalidate()
         hideTimer = nil
 
-        if isAutoHidden {
+        if isAutoHidden && !isFullScreenHidden {
             animateShow()
         }
     }
@@ -114,7 +179,7 @@ class DockWindow: NSPanel, DockContentViewDelegate {
             return
         }
 
-        guard config.autoHide else { return }
+        guard config.autoHide && !isFullScreenHidden else { return }
 
         hideTimer?.invalidate()
         hideTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { [weak self] _ in
@@ -123,10 +188,10 @@ class DockWindow: NSPanel, DockContentViewDelegate {
     }
 
     private func animateHide() {
+        guard !isFullScreenHidden else { return }
         isAutoHidden = true
         let currentFrame = frame
         var hiddenFrame = currentFrame
-
         let visibleStrip: CGFloat = 4
 
         switch config.position {
@@ -150,7 +215,7 @@ class DockWindow: NSPanel, DockContentViewDelegate {
 
     private func animateShow() {
         isAutoHidden = false
-        let targetFrame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.count, 1))
+        let targetFrame = ScreenManager.shared.dockFrame(for: config, itemCount: max(config.items.filter { $0.kind == .app }.count, 1))
 
         NSAnimationContext.runAnimationGroup { ctx in
             ctx.duration = 0.3
@@ -186,5 +251,9 @@ class DockWindow: NSPanel, DockContentViewDelegate {
 
     func dockContentViewRequestsAddApp() {
         dockDelegate?.dockWindowRequestsAddApp(self)
+    }
+
+    func dockContentViewRequestsToggleVisibility() {
+        dockDelegate?.dockWindowRequestsToggleVisibility(self)
     }
 }

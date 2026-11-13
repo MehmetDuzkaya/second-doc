@@ -5,6 +5,7 @@ protocol DockContentViewDelegate: AnyObject {
     func dockContentViewSizeChanged(_ size: CGFloat)
     func dockContentViewRequestsRemoveItem(_ item: DockItem)
     func dockContentViewRequestsAddApp()
+    func dockContentViewRequestsToggleVisibility()
 }
 
 class DockContentView: NSView, DockItemViewDelegate {
@@ -28,14 +29,15 @@ class DockContentView: NSView, DockItemViewDelegate {
 
         // Set up visual effect background (authentic macOS frosted glass / vibrancy)
         backgroundView = NSVisualEffectView()
-        backgroundView.material = .popover
-        backgroundView.blendingMode = .behindWindow
+        backgroundView.material = .hudWindow
+        backgroundView.blendingMode = .withinWindow
         backgroundView.state = .active
         backgroundView.wantsLayer = true
         backgroundView.layer?.cornerRadius = 18
         backgroundView.layer?.borderWidth = 0.5
         backgroundView.layer?.borderColor = NSColor(white: 1.0, alpha: 0.25).cgColor
         backgroundView.layer?.masksToBounds = true
+        backgroundView.alphaValue = CGFloat(config.backgroundOpacity)
         addSubview(backgroundView)
 
         // Register for drag & drop
@@ -66,16 +68,17 @@ class DockContentView: NSView, DockItemViewDelegate {
     // MARK: - Rebuild & Layout
 
     func rebuildItems() {
-        // Remove existing item views
         for view in itemViews {
             view.removeFromSuperview()
         }
         itemViews.removeAll()
+
         emptyPlaceholderView?.removeFromSuperview()
         emptyPlaceholderView = nil
 
-        // If dock has no items yet, show a friendly "+" add button
-        if config.items.isEmpty {
+        let appItems = config.items.filter { $0.kind == .app }
+
+        if appItems.isEmpty {
             let button = NSButton(frame: NSRect(x: padding, y: padding, width: config.iconSize, height: config.iconSize))
             button.bezelStyle = .regularSquare
             button.isBordered = false
@@ -95,14 +98,14 @@ class DockContentView: NSView, DockItemViewDelegate {
             addSubview(button)
             emptyPlaceholderView = button
         } else {
-            // Create item view for each dock item
-            for item in config.items {
+            for item in appItems {
                 let itemView = DockItemView(item: item, size: config.iconSize)
                 itemView.showRunningIndicator = config.showRunningIndicator
                 itemView.delegate = self
                 addSubview(itemView)
                 itemViews.append(itemView)
             }
+
         }
 
         layoutItems()
@@ -111,15 +114,17 @@ class DockContentView: NSView, DockItemViewDelegate {
     func layoutItems() {
         let iconSize = config.iconSize
         let isHorizontal = config.position.isHorizontal
-        let count = CGFloat(itemViews.count)
+        let appCount = CGFloat(itemViews.count)
 
-        let totalItemsLength: CGFloat
+        let appLength: CGFloat
         if itemViews.isEmpty {
-            totalItemsLength = 0
+            appLength = 0
         } else {
-            totalItemsLength = count * iconSize + spacing * max(count - 1, 0)
+            let appSpacing = CGFloat(max(Int(appCount) - 1, 0)) * spacing
+            appLength = appCount * iconSize + appSpacing
         }
 
+        let totalItemsLength = appLength
         let totalLength = totalItemsLength + padding * 2
         let thickness = iconSize + padding * 2 + (config.showRunningIndicator ? indicatorHeight : 0)
 
@@ -133,13 +138,22 @@ class DockContentView: NSView, DockItemViewDelegate {
             frameHeight = max(totalLength, padding * 2 + iconSize)
         }
 
-        // Resize self frame
         let oldFrame = frame
         frame = NSRect(x: oldFrame.origin.x, y: oldFrame.origin.y, width: frameWidth, height: frameHeight)
 
-        // Resize and style background (smooth, non-glitching rounded corners)
         backgroundView.frame = bounds
-        backgroundView.layer?.cornerRadius = min(22, min(frameWidth, frameHeight) / 2.6)
+        backgroundView.alphaValue = CGFloat(config.backgroundOpacity)
+
+        let backgroundRadius: CGFloat = min(24, min(frameWidth, frameHeight) / 2.3)
+
+        backgroundView.layer?.maskedCorners = [
+            .layerMinXMinYCorner,
+            .layerMaxXMinYCorner,
+            .layerMinXMaxYCorner,
+            .layerMaxXMaxYCorner
+        ]
+        backgroundView.layer?.cornerCurve = .continuous
+        backgroundView.layer?.cornerRadius = backgroundRadius
 
         if let placeholder = emptyPlaceholderView {
             let s = config.iconSize
@@ -148,7 +162,6 @@ class DockContentView: NSView, DockItemViewDelegate {
             placeholder.frame = NSRect(x: centeredX, y: centeredY, width: s, height: s)
         }
 
-        // Position each item cleanly without magnification distortion
         var offset: CGFloat = padding
         for itemView in itemViews {
             let size = iconSize
@@ -156,19 +169,20 @@ class DockContentView: NSView, DockItemViewDelegate {
             itemView.currentSize = size
 
             if isHorizontal {
-                let y = padding + (config.showRunningIndicator ? indicatorHeight : 0)
-                let centeredY = y + ((thickness - padding * 2 - (config.showRunningIndicator ? indicatorHeight : 0)) - size) / 2
+                let itemHeight = size + (config.showRunningIndicator ? indicatorHeight : 0)
+                let centeredY = padding + (thickness - padding * 2 - itemHeight) / 2
                 itemView.frame = NSRect(x: offset, y: centeredY, width: size, height: size + (config.showRunningIndicator ? indicatorHeight : 0))
                 offset += size + spacing
             } else {
-                let x = padding
-                let centeredX = x + ((thickness - padding * 2 - (config.showRunningIndicator ? indicatorHeight : 0)) - size) / 2
-                let y = frameHeight - offset - size - (config.showRunningIndicator ? indicatorHeight : 0)
-                itemView.frame = NSRect(x: centeredX, y: y, width: size + (config.showRunningIndicator ? indicatorHeight : 0), height: size)
+                let itemWidth = size + (config.showRunningIndicator ? indicatorHeight : 0)
+                let centeredX = padding + (thickness - padding * 2 - itemWidth) / 2
+                let y = frameHeight - offset - size
+                itemView.frame = NSRect(x: centeredX, y: y, width: itemWidth, height: size)
                 offset += size + spacing
             }
             itemView.needsDisplay = true
         }
+
     }
 
     // MARK: - Scroll Wheel Resizing (Doc Boyutu Ayarlama)
@@ -194,7 +208,7 @@ class DockContentView: NSView, DockItemViewDelegate {
 
     // MARK: - Drag & Drop Support
 
-    private func extractAppURLs(from pasteboard: NSPasteboard) -> [URL] {
+    private func extractDropURLs(from pasteboard: NSPasteboard) -> [URL] {
         var results: [URL] = []
 
         if let urls = pasteboard.readObjects(forClasses: [NSURL.self], options: [.urlReadingFileURLsOnly: true]) as? [URL] {
@@ -207,18 +221,12 @@ class DockContentView: NSView, DockItemViewDelegate {
             }
         }
 
-        return results.compactMap { url -> URL? in
-            let standardURL = url.resolvingSymlinksInPath()
-            if standardURL.pathExtension.lowercased() == "app" || standardURL.path.hasSuffix(".app") {
-                return standardURL
-            }
-            return nil
-        }
+        return results.map { $0.resolvingSymlinksInPath() }
     }
 
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
-        let apps = extractAppURLs(from: sender.draggingPasteboard)
-        if !apps.isEmpty {
+        let urls = extractDropURLs(from: sender.draggingPasteboard)
+        if !urls.isEmpty {
             backgroundView.layer?.borderColor = NSColor.systemBlue.withAlphaComponent(0.8).cgColor
             backgroundView.layer?.borderWidth = 1.5
             return .copy
@@ -239,14 +247,25 @@ class DockContentView: NSView, DockItemViewDelegate {
         backgroundView.layer?.borderColor = NSColor(white: 1.0, alpha: 0.25).cgColor
         backgroundView.layer?.borderWidth = 0.5
 
-        let appURLs = extractAppURLs(from: sender.draggingPasteboard)
-        guard !appURLs.isEmpty else { return false }
+        let urls = extractDropURLs(from: sender.draggingPasteboard)
+        guard !urls.isEmpty else { return false }
 
         var didAdd = false
-        for appURL in appURLs {
-            let normalizedPath = appURL.path
+        for url in urls {
+            let normalizedPath = url.path
+            guard normalizedPath.hasSuffix(".app") || url.pathExtension.lowercased() == "app" else {
+                continue
+            }
             let newItem = DockItem(appPath: normalizedPath)
-            if !config.items.contains(where: { $0.appPath == normalizedPath }) {
+
+            let existing = config.items.contains {
+                if $0.kind == .file {
+                    return ($0.filePath ?? $0.appPath) == (newItem.filePath ?? newItem.appPath)
+                }
+                return $0.appPath == newItem.appPath
+            }
+
+            if !existing {
                 config.items.append(newItem)
                 didAdd = true
             }
@@ -285,8 +304,15 @@ class DockContentView: NSView, DockItemViewDelegate {
                 return
             }
         }
-
         let menu = NSMenu()
+
+        let visibilityTitle = self.window?.isVisible == true ? "Dock'u Gizle" : "Dock'u Göster"
+        let visibilityItem = NSMenuItem(title: visibilityTitle, action: #selector(toggleVisibilityClicked), keyEquivalent: "")
+        visibilityItem.target = self
+        menu.addItem(visibilityItem)
+
+        menu.addItem(.separator())
+
         let addItem = NSMenuItem(title: "Uygulama Ekle...", action: #selector(addAppClicked), keyEquivalent: "")
         addItem.target = self
         menu.addItem(addItem)
@@ -295,5 +321,9 @@ class DockContentView: NSView, DockItemViewDelegate {
 
     @objc func addAppClicked() {
         delegate?.dockContentViewRequestsAddApp()
+    }
+
+    @objc func toggleVisibilityClicked() {
+        delegate?.dockContentViewRequestsToggleVisibility()
     }
 }
