@@ -33,27 +33,6 @@ SecondDock, macOS üzerinde her monitörünüze bağımsız dock'lar eklemenizi,
 6. **Kalıcılık (Persistence):**
    - Oluşturduğunuz tüm dock'lar, konumları ve eklenen uygulamalar `~/Library/Application Support/SecondDock/docks.json` dosyasında saklanır. Uygulamayı yeniden açtığınızda her şey kaldığı yerden gelir.
 
----
-
-## 🛠️ Kurulum ve Çalıştırma
-
-### 1. Doğrudan Çalıştırma
-Uygulama derlenmiş ve hazırdır:
-```bash
-open /Volumes/düz/second-doc/build/SecondDock.app
-```
-
-### 2. Uygulamalar (Applications) Klasörüne Kopyalama
-```bash
-cp -R /Volumes/düz/second-doc/build/SecondDock.app /Applications/
-```
-
-### 3. Yeniden Derlemek İsterseniz:
-```bash
-./build.sh
-```
-
----
 
 ## 💡 Kullanım İpuçları
 
